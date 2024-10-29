@@ -1,0 +1,290 @@
+
+        <!DOCTYPE html>
+        <html lang="zh">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>怪物信息表</title>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f5f5f5;
+                    margin: 0;
+                    padding: 20px;
+                }
+                h3 {
+                    text-align: center;
+                    color: #333;
+                }
+                p {
+                    text-align: center;
+                    font-style: italic;
+                    color: #666;
+                }
+                .box1 {
+                    margin: 10px auto;
+                    padding: 10px;
+                    max-width: 800px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                .box1 span.c_r {
+                    color: red;
+                    font-weight: bold;
+                }
+                table.t1 {
+                    width: 100%;
+                    margin: 20px 0;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 12px;
+                    text-align: center;
+                }
+                th {
+                    background-color: #f8f8f8;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .progress {
+                    background-color: #e0e0e0;
+                    border-radius: 4px;
+                    overflow: hidden;
+                }
+                .progress-bar {
+                    background-color: #76c7c0;
+                    color: white;
+                    text-align: center;
+                }
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+                a {
+                    color: #337ab7;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </head>
+        <body>
+            <h3>名称: 阁螳螂·机甲 种: 甲虫种</h3>
+            <p>备注:普通形态请参见 阁螳螂 括号内的肉质是羽绒服时</p>
+            <table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="10">肉质</th>
+</tr>
+<tr>
+<th width="10%">部位</th>
+<th width="10%">切</th>
+<th width="10%">打</th>
+<th width="10%">弾</th>
+<th style="background-color:#ffe8e0" width="10%">火</th>
+<th style="background-color:#e0f0ff" width="10%">水</th>
+<th style="background-color:#ffffe0" width="10%">雷</th>
+<th style="background-color:#f0ffff" width="10%">冰</th>
+<th style="background-color:#f0fff0" width="10%">龙</th>
+<th width="10%">气绝</th>
+</tr>
+<tr>
+<th>駆动部</th>
+<td class="b">41</td>
+<td class="b">41</td>
+<td class="b">25</td>
+<td class="b" style="background-color:#ffe8e0">0</td>
+<td class="b" style="background-color:#e0f0ff">20</td>
+<td class="b" style="background-color:#ffffe0">0</td>
+<td class="b" style="background-color:#f0ffff">5</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>爪</th>
+<td class="b">26</td>
+<td class="b">26</td>
+<td class="b">20</td>
+<td class="b" style="background-color:#ffe8e0">0</td>
+<td class="b" style="background-color:#e0f0ff">15</td>
+<td class="b" style="background-color:#ffffe0">0</td>
+<td class="b" style="background-color:#f0ffff">5</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>爪弱点</th>
+<td class="b">55</td>
+<td class="b">55</td>
+<td class="b">55</td>
+<td class="b" style="background-color:#ffe8e0">10</td>
+<td class="b" style="background-color:#e0f0ff">15</td>
+<td class="b" style="background-color:#ffffe0">10</td>
+<td class="b" style="background-color:#f0ffff">5</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>糸壁</th>
+<td class="b">75</td>
+<td class="b">75</td>
+<td class="b">100</td>
+<td class="b" style="background-color:#ffe8e0">10</td>
+<td class="b" style="background-color:#e0f0ff">20</td>
+<td class="b" style="background-color:#ffffe0">10</td>
+<td class="b" style="background-color:#f0ffff">10</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>繭玉</th>
+<td class="b">120</td>
+<td class="b">120</td>
+<td class="b">150</td>
+<td class="b" style="background-color:#ffe8e0">15</td>
+<td class="b" style="background-color:#e0f0ff">25</td>
+<td class="b" style="background-color:#ffffe0">10</td>
+<td class="b" style="background-color:#f0ffff">10</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>巨大繭</th>
+<td class="b">75 (250)</td>
+<td class="b">75 (250)</td>
+<td class="b">35 (200)</td>
+<td class="b" style="background-color:#ffe8e0">15</td>
+<td class="b" style="background-color:#e0f0ff">0</td>
+<td class="b" style="background-color:#ffffe0">20 (30)</td>
+<td class="b" style="background-color:#f0ffff">0</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>脆い瓦礫</th>
+<td class="b">26</td>
+<td class="b">26</td>
+<td class="b">10</td>
+<td class="b" style="background-color:#ffe8e0">0</td>
+<td class="b" style="background-color:#e0f0ff">5</td>
+<td class="b" style="background-color:#ffffe0">0</td>
+<td class="b" style="background-color:#f0ffff">0</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+<tr>
+<th>固い瓦礫</th>
+<td class="b">5</td>
+<td class="b">5</td>
+<td class="b">5</td>
+<td class="b" style="background-color:#ffe8e0">0</td>
+<td class="b" style="background-color:#e0f0ff">0</td>
+<td class="b" style="background-color:#ffffe0">0</td>
+<td class="b" style="background-color:#f0ffff">0</td>
+<td class="b" style="background-color:#f0fff0">0</td>
+<td class="b">0</td>
+</tr>
+</tbody>
+</table>
+            <table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="5">状态异常耐性</th>
+</tr>
+<tr>
+<th width="25%">种类</th>
+<th width="25%">伤害</th>
+<th width="25%">时间</th>
+<th width="25%">触发阈值</th>
+</tr>
+<tr>
+<th class="type_6">毒</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+<tr>
+<th class="type_7">麻痹</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+<tr>
+<th class="type_8">睡眠</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+<tr>
+<th class="type_3">气绝</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+<tr>
+<th class="type_10">爆破</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+<tr>
+<th class="type_9">減气</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+<tr>
+<th class="type_13">骑乘</th>
+<td colspan="3"> <span style="color:red;">无效</span> </td>
+</tr>
+</tbody>
+</table>
+            <table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="5">道具效果</th>
+</tr>
+<tr>
+<th width="20%">道具</th>
+<th width="15%">通常</th>
+<th width="15%">发怒</th>
+<th width="15%">疲劳</th>
+<th width="40%">前置任务</th>
+</tr>
+<tr>
+<th class="type_6">麻痹陷阱</th>
+<td class="b"> × </td>
+<td class="b"> × </td>
+<td class="b"> × </td>
+<td class="b"> - </td>
+</tr>
+<tr>
+<th class="type_13">陷阱</th>
+<td class="b"> × </td>
+<td class="b"> × </td>
+<td class="b"> × </td>
+<td class="b"> - </td>
+</tr>
+<tr>
+<th class="type_3">闪光玉</th>
+<td class="b"> × </td>
+<td class="b"> × </td>
+<td class="b"> × </td>
+<td class="b"> - </td>
+</tr>
+<tr>
+<th class="type_14">音爆弾</th>
+<td class="b" colspan="3"> × </td>
+<td class="b"> </td>
+</tr>
+<tr>
+<th class="type_10">陷阱肉</th>
+<td class="b" colspan="3"> × </td>
+<td class="b"> </td>
+</tr>
+<tr>
+<th class="type_12">肥料玉</th>
+<td class="b" colspan="3"> × </td>
+<td class="b"> </td>
+</tr>
+</tbody>
+</table>
+            
+        </body>
+        </html>
+
+        
