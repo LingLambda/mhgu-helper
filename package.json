@@ -1,23 +1,35 @@
 {
   "name": "koishi-plugin-mhgu-helper",
-  "description": "",
+  "description": "怪物猎人gu助手,方便的查询gu资料",
   "version": "0.0.1",
   "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",  
+  "contributors": [
+    "ling <abc1514671906@163.com>"
+  ],
   "files": [
     "lib",
     "dist"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LingLambda/mhgu-helper.git"
+  },
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "怪物猎人",
+    "怪猎",
+    "GU",
+    "XX",
+    "游戏辅助"
   ],
   "peerDependencies": {
-    "koishi": "^4.17.11"
+    "koishi": "^4.10"
   },
   "dependencies": {
-    "koishi-plugin-puppeteer": "^3.9.0"
+    "koishi-plugin-puppeteer": "^3.8"
   }
 }
