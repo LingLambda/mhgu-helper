@@ -18,19 +18,23 @@ export function apply(ctx: Context) {
     .alias("怪物")
     .action(({ session }, name) => getMonsterInfo(session, ctx, name))
     .example("monster 阁螳螂 查询怪物:阁螳螂 信息");
+
   ctx
     .command("equip <name>", "查mhgu装备信息")
     .alias("装备")
     .action(({ session }, name) => getEquipInfo(session, ctx, name))
-    .example("equip 橡子铠甲 查询装备:橡子铠甲 信息");
+    .example("equip 角龙系列 查询装备:角龙系列 信息");
 
-  ctx.command("skill <name>", "查mhgu技能信息(未实现)");
+  // ctx.command("skill <name>", "查mhgu技能信息(未实现)");
   // .action(({ session }, name) => getSkillInfo(session, ctx, name))
   // .example("skill 炮术 查询技能:炮术 信息");
 }
 
 async function getMonsterInfo(session: Session, ctx: Context, name: string) {
   try {
+    if(!name){
+      return '关键词为空'
+    }
     const infoPath = path.join(__dirname, "../public/monster_info/");
 
     let monsterNameArray = await fuzzySearch(name, "monster");
@@ -92,6 +96,9 @@ async function getMonsterInfo(session: Session, ctx: Context, name: string) {
 
 async function getEquipInfo(session: Session, ctx: Context, name: string) {
   try {
+    if(!name){
+      return '关键词为空'
+    }
     const infoPath = path.join(__dirname, "../public/equip_info/");
 
     let equipNameArray = await fuzzySearch(name, "equip");

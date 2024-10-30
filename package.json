@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-mhgu-helper",
   "description": "怪物猎人gu助手,方便的查询gu资料",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "contributors": [
