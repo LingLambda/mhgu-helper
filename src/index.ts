@@ -54,10 +54,30 @@ async function getMonsterInfo(session: Session, ctx: Context, name: string) {
     await session.send(h.image(imgBuf, "image/png"));
     if (monsterNameArray.length > 1) {
       let sendArray = [];
-      for (let i = 1; i < monsterNameArray.length; i++) {
+      let length = -1;
+      let toLong = false;
+      if (monsterNameArray.length <= 5) {
+        length = monsterNameArray.length;
+      } else {
+        length = 5;
+        toLong = true;
+      }
+
+      for (let i = 1; i < length; i++) {
         sendArray.push(monsterNameArray[i]);
       }
-      session.send("其他相关怪物:" + sendArray);
+      
+      if (toLong) {
+        session.send(
+          "其他相关怪物:" +
+            sendArray +
+            "...等" +
+            (monsterNameArray.length - length) +
+            "个怪物"
+        );
+      } else {
+        session.send("其他相关怪物:" + sendArray);
+      }
     }
     return;
   } catch (err) {
@@ -74,3 +94,7 @@ async function monsterNameFuzzySearch(query: string, pluginPath: string) {
   const queryRegex = new RegExp(query.split("").join(".*"), "i");
   return monsterIndexArray.filter((item: string) => queryRegex.test(item));
 }
+
+async function getEquipInfo(session: Session, ctx: Context, name: string) {}
+
+async function getSkillInfo(session: Session, ctx: Context, name: string) {}
