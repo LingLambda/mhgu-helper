@@ -13,8 +13,8 @@
 - 🚧技能资料
 
 ### 使用示例
-![示例1](.\img\example1.png)
-![示例2](.\img\example2.png)
+![示例1](./img/example1.png)
+![示例2](./img/example2.png)
 
 ### 感谢   
 此插件的html页面是对[mhgu](https://github.com/jestar719/mhgu)怪物页面的整理,(非常感谢[jestar719](https://github.com/jestar719)大佬!),从db和html中提取出了怪物的部分数据为json文件并重新渲染为html,提取相关项目:[mhgu-db](https://github.com/LingLambda/mhgu-db)  
