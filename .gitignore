@@ -17,3 +17,5 @@ tsconfig.tsbuildinfo
 *.njsproj
 *.sln
 src/test.ts
+public/mhgu.db-wal
+public/mhgu.db-shm

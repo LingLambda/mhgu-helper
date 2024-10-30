@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>装备信息表</title>
+<style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f5f5f5;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        h3 {
+          text-align: center;
+          color: #333;
+        }
+        
+        p {
+          text-align: center;
+          font-style: italic;
+          color: #666;
+        }
+        
+        .box1 {
+          margin: 10px auto;
+          padding: 10px;
+          max-width: 800px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .box1 span.c_r {
+          color: red;
+          font-weight: bold;
+        }
+        
+        table.t1 {
+          width: 100%;
+          margin: 20px 0;
+          border-collapse: collapse;
+          background-color: #fff;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+          border: 1px solid #ddd;
+          padding: 12px;
+          text-align: center;
+        }
+        
+        th {
+          background-color: #f8f8f8;
+          color: #333;
+          font-weight: bold;
+        }
+        
+        .progress {
+          background-color: #e0e0e0;
+          border-radius: 4px;
+          overflow: hidden;
+        }
+        
+        .progress-bar {
+          background-color: #76c7c0;
+          color: white;
+          text-align: center;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+        
+        a {
+          color: #337ab7;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: underline;
+        }
+
+        </style>
+</head>
+<body>
+<div class="f_min">
+<h3>结云天/地系列</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="50%">稀有度</th>
+<th width="50%">性別</th>
+</tr>
+<tr>
+<td>4</td>
+<td>男女通用</td>
+</tr>
+</tbody>
+</table>
+<h3>结云天/地系列的详情</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="13%">种类</th>
+<th width="36%">防具名</th>
+<th width="13%">防御力</th>
+<th width="13%">强化后</th>
+<th width="5%">火</th>
+<th width="5%">水</th>
+<th width="5%">雷</th>
+<th width="5%">冰</th>
+<th width="5%">龙</th>
+</tr>
+<tr>
+<td class="b" rowspan="5"> 剑士用 </td>
+<td class="left">结云之笠・天</td>
+<td>26</td>
+<td>102</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之道服・天</td>
+<td>26</td>
+<td>102</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之护臂・天</td>
+<td>26</td>
+<td>102</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之带・天</td>
+<td>26</td>
+<td>102</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之下裳・天</td>
+<td>26</td>
+<td>102</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td>-</td>
+<td> <span class="c_g b">130</span> </td>
+<td> <span class="c_g b">510</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">5</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+</tr>
+<tr>
+<td class="b" rowspan="5"> 神枪手用 </td>
+<td class="left">结云之笠・地</td>
+<td>13</td>
+<td>51</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之道服・地</td>
+<td>13</td>
+<td>51</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之护臂・地</td>
+<td>13</td>
+<td>51</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之带・地</td>
+<td>13</td>
+<td>51</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">结云之下裳・地</td>
+<td>13</td>
+<td>51</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td>-</td>
+<td> <span class="c_g b">65</span> </td>
+<td> <span class="c_g b">255</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">10</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+</tr>
+</tbody>
+</table>
+<h3>结云天/地系列的技能</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="35%">防具名</th>
+<th width="15%">孔数</th>
+<th width="50%">技能</th>
+</tr>
+<tr>
+<td class="left">结云之笠・天</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+3</span> <span class="c_g">回避性能</span> <span class="c_g b">+1</span> </td>
+</tr>
+<tr>
+<td class="left">结云之道服・天</td>
+<td> --- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+5</span> <span class="c_g">回避性能</span> <span class="c_g b">+1</span> </td>
+</tr>
+<tr>
+<td class="left">结云之护臂・天</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+3</span> <span class="c_g">回避性能</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">结云之带・天</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+1</span> <span class="c_g">回避性能</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">结云之下裳・天</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+3</span> <span class="c_g">回避性能</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td> <span class="c_g b">5</span> </td>
+<td class="left"> <span class="c_g">达人</span><span class="c_g b">+15</span> <span class="c_g">回避性能</span><span class="c_g b">+8</span> </td>
+</tr>
+<tr>
+<td class="left">结云之笠・地</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+4</span> <span class="c_g">回避性能</span> <span class="c_g b">+1</span> </td>
+</tr>
+<tr>
+<td class="left">结云之道服・地</td>
+<td> --- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+5</span> <span class="c_g">回避性能</span> <span class="c_g b">+1</span> </td>
+</tr>
+<tr>
+<td class="left">结云之护臂・地</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+3</span> <span class="c_g">回避性能</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">结云之带・地</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+1</span> <span class="c_g">回避性能</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">结云之下裳・地</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">达人</span> <span class="c_g b">+2</span> <span class="c_g">回避性能</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td> <span class="c_g b">5</span> </td>
+<td class="left"> <span class="c_g">达人</span><span class="c_g b">+15</span> <span class="c_g">回避性能</span><span class="c_g b">+8</span> </td>
+</tr>
+</tbody>
+</table>
+<h4>关联技能说明</h4>
+<table class="t1">
+<tbody>
+<tr>
+<th width="20%">技能系统</th>
+<th width="30%">发动技能</th>
+<th width="10%">点数</th>
+<th width="40%">效果</th>
+</tr>
+<tr>
+<td rowspan="3"> <span class="c_g">达人</span> </td>
+<td> <span class="c_g">洞察+3</span> </td>
+<td> <span class="c_g">20</span> </td>
+<td class="left"> 会心率+30% </td>
+</tr>
+<tr>
+<td> <span class="c_g">洞察+2</span> </td>
+<td> <span class="c_g">15</span> </td>
+<td class="left"> 会心率+20% </td>
+</tr>
+<tr>
+<td> <span class="c_g">洞察+1</span> </td>
+<td> <span class="c_g">10</span> </td>
+<td class="left"> 会心率+10% </td>
+</tr>
+<tr>
+<td rowspan="2"> <span class="c_g">回避性能</span> </td>
+<td> <span class="c_g">回避性能+2</span> </td>
+<td> <span class="c_g">15</span> </td>
+<td class="left">回避的无敌时间从0.2秒增加到0.4秒</td>
+</tr>
+<tr>
+<td> <span class="c_g">回避性能+1</span> </td>
+<td> <span class="c_g">10</span> </td>
+<td class="left">回避的无敌时间从0.2秒增加到0.33秒</td>
+</tr>
+</tbody>
+</table>
+<h3>结云天/地系列的生产</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th>各防具生产費用</th>
+</tr>
+<tr>
+<td class="c_g">4960z</td>
+</tr>
+</tbody>
+</table>
+<table class="t1">
+<tbody>
+<tr>
+<th width="15%">部位</th>
+<th width="55%">必要素材</th>
+<th width="30%">入手端材</th>
+</tr>
+<tr>
+<td>头</td>
+<td class="left"> <span class="c_g">结云的坚木</span> x1 <span class="c_g">结云券</span> x1 <span class="c_g">丸鸟的羽</span> x5 </td>
+<td> <span class="c_g">木的上端材</span> x2 </td>
+</tr>
+<tr>
+<td>胴</td>
+<td class="left"> <span class="c_g">结云的坚木</span> x2 <span class="c_g">结云券</span> x1 <span class="c_g">丸鸟的羽</span> x3 </td>
+<td> <span class="c_g">木的上端材</span> x2 </td>
+</tr>
+<tr>
+<td>腕</td>
+<td class="left"> <span class="c_g">结云的坚木</span> x2 <span class="c_g">结云券</span> x1 <span class="c_g">丸鸟的羽</span> x3 </td>
+<td> <span class="c_g">木的上端材</span> x2 </td>
+</tr>
+<tr>
+<td>腰</td>
+<td class="left"> <span class="c_g">结云的坚木</span> x1 <span class="c_g">结云券</span> x1 <span class="c_g">灵鹤石</span> x2 </td>
+<td> <span class="c_g">木的上端材</span> x2 </td>
+</tr>
+<tr>
+<td>脚</td>
+<td class="left"> <span class="c_g">结云的坚木</span> x3 <span class="c_g">结云券</span> x1 <span class="c_g">王族金龟子</span> x2 </td>
+<td> <span class="c_g">木的上端材</span> x2 </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b"> 必要<br/>合计 </td>
+<td class="left" colspan="2"> <span class="c_g">丸鸟的羽</span>x<span>11</span> <span class="c_g">结云的坚木</span>x<span>9</span> <span class="c_g">结云券</span>x<span>5</span> <span class="c_g">灵鹤石</span>x<span>2</span> <span class="c_g">王族金龟子</span>x<span>2</span> </td>
+</tr>
+</tbody>
+</table>
+<h3>结云天/地系列的强化</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th><span style="color:#cc33cc;font-weight:bold;">Lv</span></th>
+<th><span style="color:#cc33cc;font-weight:bold;">必要素材</span></th>
+<th><span style="color:#cc33cc;font-weight:bold;">入手端材</span></th>
+</tr>
+<tr>
+<td> 2 </td>
+<td> <span class="c_g">上铠玉</span> x1 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 3 </td>
+<td> <span class="c_g">尖铠玉</span> x1 <span class="cpg1_2"></span> </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 4 </td>
+<td> <span class="c_g">结云券</span> x1 怪物素材 x6 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 5 </td>
+<td> <span class="c_g">坚铠玉</span> x1 <span class="cpg1_4"></span> </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 6 </td>
+<td> <span class="c_g">坚铠玉</span> x1 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 7 </td>
+<td> <span class="c_g">泡狐龙的上鱗</span> x1 <span class="cpg1_6"></span> </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 8 </td>
+<td> <span class="c_g">重铠玉</span> x1 <span class="c_g">结云券</span> x1 怪物素材[上位] x6 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 9 </td>
+<td> <span class="c_g">重铠玉</span> x1 <span class="cpg1_8"></span> 怪物素材[上位] x6 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 10 </td>
+<td> <span class="c_g">重铠玉</span> x1 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 11 </td>
+<td> <span class="c_g">重铠玉</span> x1 <span class="cpg1_10"></span> </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 12 </td>
+<td> <span class="c_g">王铠玉</span> x1 <span class="c_g">结云券G</span> x1 怪物素材[G级] x10 </td>
+<td> - </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b"> 必要<br/>合计 </td>
+<td class="left" colspan="2"> 怪物素材[上位]x<span>18</span> 怪物素材[G级]x<span>10</span> 怪物素材x<span>6</span> <span class="c_g">重铠玉</span>x<span>4</span> <span class="c_g">结云券</span>x<span>2</span> <span class="c_g">坚铠玉</span>x<span>2</span> <span class="c_g">上铠玉</span>x<span>1</span> <span class="c_g">尖铠玉</span>x<span>1</span> <span class="c_g">泡狐龙的上鱗</span>x<span>1</span> <span class="c_g">结云的重木</span>x<span>1</span> <span class="c_g">王铠玉</span>x<span>1</span> <span class="c_g">结云券G</span>x<span>1</span> </td>
+</tr>
+</tbody>
+</table>
+<div class="box2">
+ 结云では旅的必需品与して知られている头用装备。旅人を现す記号与して的役割もある。 
+        <br/>
+ 结云周辺で広く一般人にも愛用される胴用装备。防御力より动色易さを重視した作り。 
+        <br/>
+ 结云周辺で用いられる腕用装备。林业で的使用や、旅装与して、幅広く使用される。 
+        <br/>
+ 机能性や利便性を重視した作り的腰用装备。腰布を肩に羽織るこ与で防寒具にも之る。 
+        <br/>
+ 结云周辺で一般的に普及する脚用装备。用途に合わせて带で裾幅を调整で色る机能的設计。 
+        <br/>
+</div>
+</div>
+</body>
+</html>

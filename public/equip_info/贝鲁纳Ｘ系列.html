@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>装备信息表</title>
+<style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f5f5f5;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        h3 {
+          text-align: center;
+          color: #333;
+        }
+        
+        p {
+          text-align: center;
+          font-style: italic;
+          color: #666;
+        }
+        
+        .box1 {
+          margin: 10px auto;
+          padding: 10px;
+          max-width: 800px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .box1 span.c_r {
+          color: red;
+          font-weight: bold;
+        }
+        
+        table.t1 {
+          width: 100%;
+          margin: 20px 0;
+          border-collapse: collapse;
+          background-color: #fff;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+          border: 1px solid #ddd;
+          padding: 12px;
+          text-align: center;
+        }
+        
+        th {
+          background-color: #f8f8f8;
+          color: #333;
+          font-weight: bold;
+        }
+        
+        .progress {
+          background-color: #e0e0e0;
+          border-radius: 4px;
+          overflow: hidden;
+        }
+        
+        .progress-bar {
+          background-color: #76c7c0;
+          color: white;
+          text-align: center;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+        
+        a {
+          color: #337ab7;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: underline;
+        }
+
+        </style>
+</head>
+<body>
+<div class="f_min">
+<h3>贝鲁纳Ｘ系列</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="50%">稀有度</th>
+<th width="50%">性別</th>
+</tr>
+<tr>
+<td>8</td>
+<td>男女通用</td>
+</tr>
+</tbody>
+</table>
+<h3>贝鲁纳Ｘ系列的详情</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="13%">种类</th>
+<th width="36%">防具名</th>
+<th width="13%">防御力</th>
+<th width="13%">强化后</th>
+<th width="5%">火</th>
+<th width="5%">水</th>
+<th width="5%">雷</th>
+<th width="5%">冰</th>
+<th width="5%">龙</th>
+</tr>
+<tr>
+<td class="b" rowspan="5"> 剑士用 </td>
+<td class="left">贝鲁纳Ｘ头巾</td>
+<td>80</td>
+<td>122</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ铠甲</td>
+<td>80</td>
+<td>122</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ腕甲</td>
+<td>80</td>
+<td>122</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ腰带</td>
+<td>80</td>
+<td>122</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ护腿</td>
+<td>80</td>
+<td>122</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">1</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td>-</td>
+<td> <span class="c_g b">400</span> </td>
+<td> <span class="c_g b">610</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">5</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+</tr>
+<tr>
+<td class="b" rowspan="5"> 神枪手用 </td>
+<td class="left">贝鲁纳Ｘ帽</td>
+<td>44</td>
+<td>71</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ轻甲</td>
+<td>44</td>
+<td>71</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ手甲</td>
+<td>44</td>
+<td>71</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ护腰</td>
+<td>44</td>
+<td>71</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ胫甲</td>
+<td>44</td>
+<td>71</td>
+<td style="background-color:#ffe8e0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#e0f0ff"> <span><span class="c_g b">2</span></span> </td>
+<td style="background-color:#ffffe0"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0ffff"> <span><span class="c_g b">0</span></span> </td>
+<td style="background-color:#f0fff0"> <span><span class="c_g b">0</span></span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td>-</td>
+<td> <span class="c_g b">220</span> </td>
+<td> <span class="c_g b">355</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">10</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+<td> <span class="c_g b">0</span> </td>
+</tr>
+</tbody>
+</table>
+<h3>贝鲁纳Ｘ系列的技能</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="35%">防具名</th>
+<th width="15%">孔数</th>
+<th width="50%">技能</th>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ头巾</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+3</span> <span class="c_g">广域</span> <span class="c_g b">+4</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ铠甲</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+2</span> <span class="c_g">广域</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ腕甲</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+2</span> <span class="c_g">广域</span> <span class="c_g b">+4</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ腰带</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">笛</span> <span class="c_g b">+8</span> <span class="c_g">广域</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ护腿</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+3</span> <span class="c_g">广域</span> <span class="c_g b">+3</span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td> <span class="c_g b">8</span> </td>
+<td class="left"> <span class="c_g">广域</span><span class="c_g b">+15</span> <span class="c_g">加护</span><span class="c_g b">+10</span> <span class="c_g">笛</span><span class="c_g b">+8</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ帽</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+3</span> <span class="c_g">广域</span> <span class="c_g b">+3</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ轻甲</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+2</span> <span class="c_g">广域</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ手甲</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+2</span> <span class="c_g">广域</span> <span class="c_g b">+5</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ护腰</td>
+<td> ◯-- </td>
+<td class="left"> <span class="c_g">笛</span> <span class="c_g b">+8</span> <span class="c_g">广域</span> <span class="c_g b">+2</span> </td>
+</tr>
+<tr>
+<td class="left">贝鲁纳Ｘ胫甲</td>
+<td> ◯◯- </td>
+<td class="left"> <span class="c_g">加护</span> <span class="c_g b">+3</span> <span class="c_g">广域</span> <span class="c_g b">+3</span> </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b">合计</td>
+<td> <span class="c_g b">8</span> </td>
+<td class="left"> <span class="c_g">广域</span><span class="c_g b">+15</span> <span class="c_g">加护</span><span class="c_g b">+10</span> <span class="c_g">笛</span><span class="c_g b">+8</span> </td>
+</tr>
+</tbody>
+</table>
+<h4>关联技能说明</h4>
+<table class="t1">
+<tbody>
+<tr>
+<th width="20%">技能系统</th>
+<th width="30%">发动技能</th>
+<th width="10%">点数</th>
+<th width="40%">效果</th>
+</tr>
+<tr>
+<td rowspan="1"> <span class="c_g">加护</span> </td>
+<td> <span class="c_g">精灵加护</span> </td>
+<td> <span class="c_g">10</span> </td>
+<td class="left"> 4分之一的概率，受到的伤害减少30% </td>
+</tr>
+<tr>
+<td rowspan="2"> <span class="c_g">广域</span> </td>
+<td> <span class="c_g">广域化+2</span> </td>
+<td> <span class="c_g">15</span> </td>
+<td class="left">药草、回复药、解毒药、忍耐的种、怪力的种、抵消果实的效果在同一个区域内的队友、猫身上也会发动</td>
+</tr>
+<tr>
+<td> <span class="c_g">广域化+1</span> </td>
+<td> <span class="c_g">10</span> </td>
+<td class="left">药草、回复药、解毒药、忍耐的种、怪力的种、抵消果实的效果在同一个区域内的队友、猫身上也会发动。除解毒药外其它效果减半</td>
+</tr>
+<tr>
+<td rowspan="1"> <span class="c_g">笛</span> </td>
+<td> <span class="c_g">吹笛名人</span> </td>
+<td> <span class="c_g">10</span> </td>
+<td class="left"> 延长狩猎笛的演奏效果时间，拥有回复效果的旋律则出现回复量变多的效果。此外，笛道具有1/2的几率不破损 </td>
+</tr>
+</tbody>
+</table>
+<h3>贝鲁纳Ｘ系列的生产</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th>各防具生产費用</th>
+</tr>
+<tr>
+<td class="c_g">11880z</td>
+</tr>
+</tbody>
+</table>
+<table class="t1">
+<tbody>
+<tr>
+<th width="15%">部位</th>
+<th width="55%">必要素材</th>
+<th width="30%">入手端材</th>
+</tr>
+<tr>
+<td>头</td>
+<td class="left"> <span class="c_g">极上的毛皮</span> x2 <span class="c_g">贝尔纳券G</span> x1 <span class="c_g">云羊鹿的毛球</span> x2 <span class="c_g">柔軟之厚皮</span> x2 </td>
+<td> <span class="c_g">毛皮的重端材</span> x2 </td>
+</tr>
+<tr>
+<td>胴</td>
+<td class="left"> <span class="c_g">极上的毛皮</span> x2 <span class="c_g">贝尔纳券G</span> x1 <span class="c_g">云羊鹿的毛球</span> x2 <span class="c_g">柔軟之厚皮</span> x2 </td>
+<td> <span class="c_g">毛皮的重端材</span> x2 </td>
+</tr>
+<tr>
+<td>腕</td>
+<td class="left"> <span class="c_g">极上的毛皮</span> x2 <span class="c_g">贝尔纳券G</span> x1 <span class="c_g">云羊鹿的毛球</span> x2 <span class="c_g">柔軟之厚皮</span> x2 </td>
+<td> <span class="c_g">毛皮的重端材</span> x2 </td>
+</tr>
+<tr>
+<td>腰</td>
+<td class="left"> <span class="c_g">极上的毛皮</span> x1 <span class="c_g">贝尔纳券G</span> x1 <span class="c_g">云羊鹿的毛球</span> x2 <span class="c_g">柔軟之厚皮</span> x2 </td>
+<td> <span class="c_g">毛皮的重端材</span> x2 </td>
+</tr>
+<tr>
+<td>脚</td>
+<td class="left"> <span class="c_g">极上的毛皮</span> x2 <span class="c_g">贝尔纳券G</span> x1 <span class="c_g">云羊鹿的毛球</span> x2 <span class="c_g">柔軟之厚皮</span> x2 </td>
+<td> <span class="c_g">毛皮的重端材</span> x2 </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b"> 必要<br/>合计 </td>
+<td class="left" colspan="2"> <span class="c_g">云羊鹿的毛球</span>x<span>10</span> <span class="c_g">柔軟之厚皮</span>x<span>10</span> <span class="c_g">极上的毛皮</span>x<span>9</span> <span class="c_g">贝尔纳券G</span>x<span>5</span> </td>
+</tr>
+</tbody>
+</table>
+<h3>贝鲁纳Ｘ系列的强化</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th><span style="color:#cc33cc;font-weight:bold;">Lv</span></th>
+<th><span style="color:#cc33cc;font-weight:bold;">必要素材</span></th>
+<th><span style="color:#cc33cc;font-weight:bold;">入手端材</span></th>
+</tr>
+<tr>
+<td> 2 </td>
+<td> <span class="c_g">坚铠玉</span> x1 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 3 </td>
+<td> <span class="c_g">重铠玉</span> x1 <span class="cpg1_2"></span> </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 4 </td>
+<td> <span class="c_g">重铠玉</span> x1 草食种素材[G级] x10 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 5 </td>
+<td> <span class="c_g">重铠玉</span> x1 <span class="cpg1_4"></span> </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 6 </td>
+<td> <span class="c_g">重铠玉</span> x1 <span class="c_g">极上的毛皮</span> x1 矿石素材[G级] x6 </td>
+<td> - </td>
+</tr>
+<tr>
+<td> 7 </td>
+<td> <span class="c_g">王铠玉</span> x1 <span class="cpg1_6"></span> </td>
+<td> - </td>
+</tr>
+<tr style="background-color:#eee;">
+<td class="b"> 必要<br/>合计 </td>
+<td class="left" colspan="2"> 草食种素材[G级]x<span>10</span> 矿石素材[G级]x<span>6</span> <span class="c_g">重铠玉</span>x<span>4</span> <span class="c_g">坚铠玉</span>x<span>1</span> <span class="c_g">极上的毛皮</span>x<span>1</span> <span class="c_g">王铠玉</span>x<span>1</span> <span class="c_g">贝尔纳券G</span>x<span>1</span> </td>
+</tr>
+</tbody>
+</table>
+<div class="box2">
+ 贝尔纳村发祥的防具に、さら之る改良が加えられた剑士向け的头用装备。 
+        <br/>
+ 高品质之素材が使用された贝尔纳村的胴用装备。経验丰富之剑士から热い支持を受ける。 
+        <br/>
+ 贝尔纳村的熟炼職人が、最高的技与魂を織り込んだ希少之腕用装备。 
+        <br/>
+ モチーフ与之った牧童的衣服からは、もはやかけ離れた性能を持つ腰用装备。 
+        <br/>
+ 贝尔纳村与龙历院的共同研究により、高い耐久性を実现した脚用装备。 
+        <br/>
+</div>
+</div>
+</body>
+</html>
