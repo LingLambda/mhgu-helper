@@ -1,96 +1,185 @@
 
-        <!DOCTYPE html>
-        <html lang="zh">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>怪物信息表</title>
-            <style>
-            body {
-                font-family: 'Arial', sans-serif;
-                background-color: #f5f5f5;
-                margin: 0;
-                padding: 20px;
-            }
-            
-            h3 {
-                text-align: center;
-                color: #333;
-            }
-            
-            p {
-                text-align: center;
-                font-style: italic;
-                color: #666;
-            }
-            
-            .box1 {
-                margin: 10px auto;
-                padding: 10px;
-                max-width: 800px;
-                background-color: #fff;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            .box1 span.c_r {
-                color: red;
-                font-weight: bold;
-            }
-            
-            table.t1 {
-                width: 100%;
-                margin: 20px 0;
-                border-collapse: collapse;
-                background-color: #fff;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            th, td {
-                border: 1px solid #ddd;
-                padding: 12px;
-                text-align: center;
-            }
-            
-            th {
-                background-color: #f8f8f8;
-                color: #333;
-                font-weight: bold;
-            }
-            
-            .progress {
-                background-color: #e0e0e0;
-                border-radius: 4px;
-                overflow: hidden;
-            }
-            
-            .progress-bar {
-                background-color: #76c7c0;
-                color: white;
-                text-align: center;
-            }
-            
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-            
-            a {
-                color: #337ab7;
-                text-decoration: none;
-            }
-            
-            a:hover {
-                text-decoration: underline;
-            }
-            
-            </style>
-        </head>
-        <body>
-            <h3>名称: 烬灭刃斩龙 种: 兽龙种</h3>
-            <p>备注:括号内的肉质是头、喉は赤热时。尾元、尾巴はオーバーヒート时</p>
-            <table class="t1">
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>怪物信息表</title>
+<style>
+         body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f5f5f5; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+h3 { 
+    text-align: center; 
+    color: #333; 
+}
+
+p { 
+    text-align: center; 
+    font-style: italic; 
+    color: #666; 
+}
+
+.box1 { 
+    margin: 10px auto; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box2 { 
+    margin: 10px auto; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box1 span.c_r { 
+    color: red; 
+    font-weight: bold; 
+}
+
+.table-container { 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+table.t1 { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: center; 
+}
+
+th { 
+    background-color: #f8f8f8; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+td { 
+    background-color: #ffffff; 
+}
+
+tr:nth-child(even) { 
+    background-color: #f9f9f9; 
+}
+
+.progress { 
+    background-color: #e0e0e0; 
+    border-radius: 5px; 
+}
+
+.progress-bar { 
+    background-color: #76c7c0; 
+    color: white; 
+    text-align: center; 
+    height: 100%; 
+    border-radius: 5px; 
+}
+
+.c_g { 
+    color: #5CB85C; 
+}
+
+a { 
+    color: #337ab7; 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.sp_only { 
+    display: none; 
+}
+
+@media (max-width: 768px) { 
+    .sp_only { 
+        display: inline; 
+    }
+
+    .pc_only { 
+        display: none; 
+    } 
+}
+
+        </style>
+</head>
+<body>
+<div class="f_min">
+<h3 id="id226943"> 烬灭刃斩龙 - 兽龙种 </h3>
+<div style="clear:both;">
+</div>
+<div>
+<h4>怪物的弱点</h4>
+<table class="t1">
+<tbody>
+<tr>
+<th width="15%">状态</th>
+<th width="15%">斩</th>
+<th width="15%">打</th>
+<th width="15%">弾</th>
+<th width="8%">火</th>
+<th width="8%">水</th>
+<th width="8%">雷</th>
+<th width="8%">冰</th>
+<th width="8%">龙</th>
+</tr>
+<tr>
+<td> <span class="c_g b">通常时</span> </td>
+<td>喉<br/>头<br/>尾</td>
+<td>喉<br/>头<br/>尾</td>
+<td>背<br/>喉</td>
+<td style="background-color:#ffe8e0;vertical-align: middle;">×</td>
+<td style="background-color:#e0f0ff;vertical-align: middle;">◎</td>
+<td style="background-color:#ffffe0;vertical-align: middle;">△</td>
+<td style="background-color:#f0ffff;vertical-align: middle;">○</td>
+<td style="background-color:#f0fff0;vertical-align: middle;">△</td>
+</tr>
+<tr>
+<td> <span class="c_g b">赤热时</span> </td>
+<td>喉<br/>头<br/>尾</td>
+<td>喉<br/>头<br/>尾</td>
+<td>背<br/>喉</td>
+<td style="background-color:#ffe8e0;vertical-align: middle;">×</td>
+<td style="background-color:#e0f0ff;vertical-align: middle;">◎</td>
+<td style="background-color:#ffffe0;vertical-align: middle;">△</td>
+<td style="background-color:#f0ffff;vertical-align: middle;">◎</td>
+<td style="background-color:#f0fff0;vertical-align: middle;">△</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>怪物的肉质・耐久値</h4>
+<div class="box2">
+       耐久值归零会触发硬直和部位破坏,下方为切断的耐久值
+      <br/>在“狞猛化”状态下耐久值有特定的表现,下方为发生效果时的表现
+      <br/>
+<span class="c_g b">肉质カッコ内は头、喉は赤热时。尾元、尾巴はオーバーヒート时</span>
+<br/>
+</div>
+<div class="row_x">
+<div class="col-sm-9">
+<table class="t1">
 <tbody>
 <tr>
 <th class="th2" colspan="10">肉质</th>
@@ -144,7 +233,7 @@
 <td class="b">0</td>
 </tr>
 <tr>
-<th>躯干</th>
+<th>胴</th>
 <td class="b">25</td>
 <td class="b">25</td>
 <td class="b">20</td>
@@ -205,7 +294,132 @@
 </tr>
 </tbody>
 </table>
-            <table class="t1">
+</div>
+<div class="col-sm-3 pc_only">
+<table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="4">耐久値・浸出物</th>
+</tr>
+<tr>
+<th width="31%">部位</th>
+<th width="23%">耐久値</th>
+<th width="23%">狞猛化</th>
+<th width="23%">浸出物</th>
+</tr>
+<tr>
+<th>头</th>
+<td class="b"> 350 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>背中</th>
+<td class="b"> 300 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#ffcc44;">■</td>
+</tr>
+<tr>
+<th>胴</th>
+<td class="b"> 200 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#ffcc44;">■</td>
+</tr>
+<tr>
+<th>前脚</th>
+<td class="b"> 200 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:green;">■</td>
+</tr>
+<tr>
+<th>左后脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>右后脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>尾巴</th>
+<td class="b"> 300<br/>[1200] </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sp_only">
+<table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="4">耐久値・浸出物</th>
+</tr>
+<tr>
+<th width="31%">部位</th>
+<th width="23%">耐久値</th>
+<th width="23%">狞猛化</th>
+<th width="23%">浸出物</th>
+</tr>
+<tr>
+<th>头</th>
+<td class="b"> 350 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>背中</th>
+<td class="b"> 300 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#ffcc44;">■</td>
+</tr>
+<tr>
+<th>胴</th>
+<td class="b"> 200 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#ffcc44;">■</td>
+</tr>
+<tr>
+<th>前脚</th>
+<td class="b"> 200 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:green;">■</td>
+</tr>
+<tr>
+<th>左后脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>右后脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>尾巴</th>
+<td class="b"> 300<br/>[1200] </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> - </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>状态変化・耐性</h4>
+<div class="box1">
+       ◎＞○＞△＞×＞
+      <span class="c_r">无效</span> [越往左越有效]
+      <br/> 量规中央是各怪物的平均值
+      <br/> 毒伤害是经过总时间的伤害 
+     </div>
+<div class="row_x">
+<div class="col-sm-6">
+<table class="t1">
 <tbody>
 <tr>
 <th class="th2" colspan="5">状态异常耐性</th>
@@ -214,7 +428,7 @@
 <th width="25%">种类</th>
 <th width="25%">伤害</th>
 <th width="25%">时间</th>
-<th width="25%">触发阈值</th>
+<th width="25%">触发容易度</th>
 </tr>
 <tr>
 <th class="type_6">毒</th>
@@ -325,7 +539,9 @@
 </tr>
 </tbody>
 </table>
-            <table class="t1">
+</div>
+<div class="col-sm-6">
+<table class="t1">
 <tbody>
 <tr>
 <th class="th2" colspan="5">道具效果</th>
@@ -334,7 +550,7 @@
 <th width="20%">道具</th>
 <th width="15%">通常</th>
 <th width="15%">发怒</th>
-<th width="15%">疲劳</th>
+<th width="15%">疲れ</th>
 <th width="40%">前置任务</th>
 </tr>
 <tr>
@@ -364,7 +580,7 @@
 <td class="b"> </td>
 </tr>
 <tr>
-<th class="type_10">陷阱肉</th>
+<th class="type_10">罠肉</th>
 <td class="b" colspan="3"> × </td>
 <td class="b"> </td>
 </tr>
@@ -375,7 +591,717 @@
 </tr>
 </tbody>
 </table>
-            <table class="t1">
+</div>
+<div class="col-sm-6">
+<table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="6">怪物的特徴</th>
+</tr>
+<tr>
+<th width="10%">咆哮</th>
+<th width="10%">风圧</th>
+<th width="10%">振动</th>
+<th width="10%">拘束</th>
+<th width="30%">属性やられ</th>
+<th width="30%">状态异常</th>
+</tr>
+<tr>
+<td> <span class="b"> 大 </span> </td>
+<td> <span class="b"> 大 </span> </td>
+<td> <span class="b"> - </span> </td>
+<td> <span class="b"> - </span> </td>
+<td> <span class="type_1">火[大]</span><br/> </td>
+<td> <span class="type_10">爆破</span><br/> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="box1">
+       二名怪物得到的颜色素材根据任务LV不同而变化。 
+     </div>
+<div>
+<h3>剥ぎ取り・掉落物</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="10%">方法</th>
+<th width="10%">下位</th>
+<th width="30%">上位</th>
+<th width="30%">G级</th>
+</tr>
+<tr>
+<td style="background-color:#fffff0;"> <span class="c_g b">剥取个体</span><br/> <span class="c_p">3回</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～4</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的鱗</span>
+<span class="c_g b">40%</span>
+<br/>
+<span class="c_g">斩龙的鋭牙</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="c_g b">16%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">斩龙的逆鱗</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">3%</span>
+</div> <span style="color:#888;">Lv5～8</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的鱗</span>
+<span class="c_g b">22%</span>
+<br/>
+<span class="c_g">斩龙的鋭牙</span>
+<span class="cpg1_8"></span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">18%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="c_g b">10%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="cpg1_12"></span>
+<br/>
+<span class="c_g">斩龙的逆鱗</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">4%</span>
+</div> <span style="color:#888;">Lv9～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">40%</span>
+<br/>
+<span class="c_g">斩龙的鋭牙</span>
+<span class="cpg1_16"></span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">16%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">斩龙的逆鱗</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="cpg1_20"></span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G2</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">22%</span>
+<br/>
+<span class="c_g">斩龙的重牙</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">18%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="cpg1_24"></span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">3%</span>
+</div> <span style="color:#888;">LvG3～G5</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="cpg1_28"></span>
+<br/>
+<span class="c_g">斩龙的重牙</span>
+<span class="c_g b">19%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">18%</span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="cpg1_32"></span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">4%</span>
+</div> <span style="color:#888;">LvG超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="cpg1_36"></span>
+<br/>
+<span class="c_g">斩龙的重牙</span>
+<span class="c_g b">18%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="c_g b">16%</span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="cpg1_40"></span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">5%</span>
+</div> </td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">尾巴剥ぎ取り</span><br/> <span class="c_p">1回</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾巴</span>
+<span class="c_g b">76%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="cpg1_44"></span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的断剑尾</span>
+<span class="c_g b">96%</span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">4%</span>
+</div> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">切断系的攻击</td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">掉落物</span><br/> <span class="c_p">3回</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">龙泪</span>
+<span class="c_g b">38%</span>
+<br/>
+<span class="c_g">龙的大粒泪</span>
+<span class="cpg1_48"></span>
+<br/>
+<span class="c_g">烬灭刃的粉尘</span>
+<span class="c_g b">18%</span>
+<br/>
+<span class="c_g">斩龙的逆鱗</span>
+<span class="c_g b">5%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">2%</span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">龙的大粒泪</span>
+<span class="cpg1_52"></span>
+<br/>
+<span class="c_g">烬灭刃的粉尘</span>
+<span class="c_g b">33%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">3%</span>
+</div> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">喉、尾巴的オーバーヒート解除で羽绒服时</td>
+</tr>
+</tbody>
+</table>
+<h3>捕获・部位破坏报酬</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="10%">方法</th>
+<th width="10%">下位</th>
+<th width="30%">上位</th>
+<th width="30%">G级</th>
+</tr>
+<tr>
+<td style="background-color:#fffff0;"> <span class="c_g b">捕获</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～4</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的焔状壳</span>
+<span class="cpg1_56"></span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span>
+<span class="c_g b">22%</span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的尾巴</span>
+<span class="c_g b">12%</span>
+<br/>
+<span class="c_g">赤热的火炎嚢</span> x2 
+           <span class="cpg1_60"></span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="c_g b">8%</span>
+</div> <span style="color:#888;">Lv5～8</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">28%</span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span>
+<span class="c_g b">22%</span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="cpg1_64"></span>
+<br/>
+<span class="c_g">斩龙的尾巴</span>
+<span class="c_g b">12%</span>
+<br/>
+<span class="c_g">赤热的火炎嚢</span> x2 
+           <span class="c_g b">10%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">8%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="cpg1_68"></span>
+</div> <span style="color:#888;">Lv9～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">28%</span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span>
+<span class="c_g b">22%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的尾巴</span>
+<span class="cpg1_72"></span>
+<br/>
+<span class="c_g">赤热的火炎嚢</span> x2 
+           <span class="c_g b">10%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="c_g b">8%</span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G2</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">赤热的熔炉嚢</span>
+<span class="cpg1_76"></span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">22%</span>
+<br/>
+<span class="c_g">斩龙的断剑尾</span>
+<span class="c_g b">14%</span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span> x2 
+           <span class="c_g b">10%</span>
+</div> <span style="color:#888;">LvG3～G5</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="cpg1_80"></span>
+<br/>
+<span class="c_g">赤热的熔炉嚢</span>
+<span class="c_g b">24%</span>
+<br/>
+<span class="c_g">斩龙的断剑尾</span>
+<span class="c_g b">14%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">12%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="cpg1_84"></span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span> x2 
+           <span class="c_g b">10%</span>
+</div> <span style="color:#888;">LvG超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">赤热的熔炉嚢</span>
+<span class="c_g b">24%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="cpg1_88"></span>
+<br/>
+<span class="c_g">斩龙的断剑尾</span>
+<span class="c_g b">14%</span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span> x2 
+           <span class="c_g b">10%</span>
+</div> </td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">头部破坏</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～4</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的鋭牙</span>
+<span class="c_g b">45%</span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span>
+<span class="cpg1_92"></span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">13%</span>
+<br/>
+<span class="c_g">斩龙牙</span> x2 
+           <span class="c_g b">10%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">2%</span>
+</div> <span style="color:#888;">Lv5～8</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的鋭牙</span>
+<span class="cpg1_96"></span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">16%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">4%</span>
+</div> <span style="color:#888;">Lv9～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的鋭牙</span>
+<span class="cpg1_100"></span>
+<br/>
+<span class="c_g">赤热した红焔嚢</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">14%</span>
+<br/>
+<span class="c_g">斩龙的炎玉</span>
+<span class="c_g b">6%</span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G2</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的重牙</span>
+<span class="cpg1_104"></span>
+<br/>
+<span class="c_g">赤热的熔炉嚢</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">13%</span>
+<br/>
+<span class="c_g">斩龙的鋭牙</span> x2 
+           <span class="c_g b">10%</span>
+<br/>
+<span class="c_g">烬灭刃的粉尘</span>
+<span class="cpg1_108"></span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">2%</span>
+</div> <span style="color:#888;">LvG3～G5</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的重牙</span>
+<span class="c_g b">45%</span>
+<br/>
+<span class="c_g">赤热的熔炉嚢</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="cpg1_112"></span>
+<br/>
+<span class="c_g">烬灭刃的粉尘</span>
+<span class="c_g b">5%</span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">4%</span>
+</div> <span style="color:#888;">LvG超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的重牙</span>
+<span class="c_g b">45%</span>
+<br/>
+<span class="c_g">赤热的熔炉嚢</span>
+<span class="cpg1_116"></span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">14%</span>
+<br/>
+<span class="c_g">斩龙的天鱗</span>
+<span class="c_g b">6%</span>
+<br/>
+<span class="c_g">烬灭刃的粉尘</span>
+<span class="c_g b">5%</span>
+</div> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">2回ひるみ</td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">背热壳破坏</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～4</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的焔状壳</span>
+<span class="cpg1_120"></span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的炎状壳</span> x2 
+           <span class="c_g b">15%</span>
+</div> <span style="color:#888;">Lv5～8</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">65%</span>
+<br/>
+<span class="c_g">斩龙的炎状壳</span> x2 
+           <span class="cpg1_124"></span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="c_g b">12%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">8%</span>
+</div> <span style="color:#888;">Lv9～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">65%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="cpg1_128"></span>
+<br/>
+<span class="c_g">斩龙的炎状壳</span> x2 
+           <span class="c_g b">15%</span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G2</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">65%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span> x2 
+           <span class="cpg1_132"></span>
+</div> <span style="color:#888;">LvG3～G5</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">65%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span> x2 
+           <span class="c_g b">15%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">12%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="cpg1_136"></span>
+</div> <span style="color:#888;">LvG超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">65%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span> x2 
+           <span class="c_g b">15%</span>
+</div> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">1回ひるみ</td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">腕破坏</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～4</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的鱗</span>
+<span class="cpg1_140"></span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="c_g b">30%</span>
+</div> <span style="color:#888;">Lv5～8</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的鱗</span>
+<span class="c_g b">35%</span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">25%</span>
+<br/>
+<span class="c_g">烬灭刃的甲壳</span>
+<span class="cpg1_144"></span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">15%</span>
+</div> <span style="color:#888;">Lv9～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">70%</span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">30%</span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G2</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="cpg1_148"></span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">35%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">25%</span>
+</div> <span style="color:#888;">LvG3～G5</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">35%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="cpg1_152"></span>
+<br/>
+<span class="c_g">烬灭刃的坚壳</span>
+<span class="c_g b">25%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="c_g b">15%</span>
+</div> <span style="color:#888;">LvG超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">70%</span>
+<br/>
+<span class="c_g">烬灭刃的重壳</span>
+<span class="cpg1_156"></span>
+</div> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">1回ひるみ</td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">尾巴破坏</span><br/> </td>
+<td style="background-color:#fff;"> - </td>
+<td style="background-color:#fff;"> <span style="color:#888;">Lv1～4</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾刃片</span> x2 
+           <span class="c_g b">45%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">烬灭刃的鱗</span>
+<span class="c_g b">15%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="cpg1_160"></span>
+</div> <span style="color:#888;">Lv5～8</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾刃片</span> x2 
+           <span class="c_g b">40%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="c_g b">10%</span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="cpg1_164"></span>
+<br/>
+<span class="c_g">烬灭刃的鱗</span> x2 
+           <span class="c_g b">10%</span>
+</div> <span style="color:#888;">Lv9～10</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾刃片</span> x2 
+           <span class="c_g b">40%</span>
+<br/>
+<span class="c_g">斩龙的焔状壳</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="cpg1_168"></span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="c_g b">10%</span>
+</div> </td>
+<td style="background-color:#fff;"> <span style="color:#888;">LvG1～G2</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="c_g b">30%</span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">28%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x2 
+           <span class="cpg1_172"></span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span>
+<span class="c_g b">11%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">10%</span>
+</div> <span style="color:#888;">LvG3～G5</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="c_g b">35%</span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="cpg1_176"></span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x2 
+           <span class="c_g b">15%</span>
+<br/>
+<span class="c_g">烬灭刃的上鱗</span> x2 
+           <span class="c_g b">10%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">10%</span>
+</div> <span style="color:#888;">LvG超</span><br/>
+<div style="padding:0px;margin:0px;border:1px solid #008000;">
+<span class="c_g">斩龙的尾刃片</span> x4 
+           <span class="cpg1_180"></span>
+<br/>
+<span class="c_g">斩龙的狱炎状壳</span>
+<span class="c_g b">30%</span>
+<br/>
+<span class="c_g">烬灭刃的厚鱗</span>
+<span class="c_g b">20%</span>
+<br/>
+<span class="c_g">斩龙的尾刃片</span> x2 
+           <span class="c_g b">10%</span>
+</div> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">2回目ひるみで赤热状态时に切断攻击</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>生息地</h3>
+<table class="t1">
 <tbody>
 <tr>
 <th width="25%">地图</th>
@@ -384,38 +1310,282 @@
 <th width="25%">休息区域</th>
 </tr>
 <tr>
-<td><a href="../data/2400.html">古代林</a></td>
+<td><span class="c_g">古代林</span></td>
 <td>2</td>
 <td>2,3,4,6,7,9,10,11</td>
 <td>11</td>
 </tr>
 <tr>
-<td><a href="../data/2412.html">旧沙漠</a></td>
+<td><span class="c_g">旧沙漠</span></td>
 <td>4</td>
 <td>1,3,4,5,7,10</td>
 <td>3</td>
 </tr>
 <tr>
-<td><a href="../data/2407.html">火山</a></td>
+<td><span class="c_g">火山</span></td>
 <td>6</td>
 <td>3,4,5,6,7</td>
 <td>6</td>
 </tr>
 <tr>
-<td><a href="../data/2411.html">地底火山</a></td>
+<td><span class="c_g">地底火山</span></td>
 <td>8</td>
 <td>1,2,8,9</td>
 <td>9</td>
 </tr>
 <tr>
-<td><a href="../data/2975.html">密林</a></td>
+<td><span class="c_g">密林</span></td>
 <td>4</td>
 <td>2,3,4,5,9,10</td>
 <td>10</td>
 </tr>
 </tbody>
 </table>
-        </body>
-        </html>
-
-        
+<h3>出现任务</h3>
+<div class="box1">
+<span style="background-color:#FFE8E0;">赤色</span>背景は乱入时に出现
+      <br/>
+ 乱入怪物的底色使用
+      <span style="background-color:#fff0a0;">橙色</span>标识
+      <br/> 強さ的ゲージは [
+      <span style="background-color:#5CB85C;">绿</span>：体力的倍率] [
+      <span style="background-color:#CC9342;">橙</span>：全体防御率] を集计しゲージが増えるほど強く、平均値がゲージ中央に之るように加工
+      <br/> 怪物固有的体力等があり、そ的倍率之的で异之る怪物与的比較には使えません 
+     </div>
+<table class="t1">
+<tbody>
+<tr>
+<th class="sp_only" width="43%">任务名</th>
+<th class="sp_only" width="17%">強さ</th>
+<th class="sp_only" width="40%">怪物</th>
+<th class="pc_only" width="15%">种类</th>
+<th class="pc_only" width="30%">任务名</th>
+<th class="pc_only" width="10%">区域</th>
+<th class="pc_only" width="15%">強さ</th>
+<th class="pc_only" width="30%">怪物</th>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">古代林</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托１</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">古代林</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:48%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 捕获 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">烬灭刃捕获委托２</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:48%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">黄速龙王</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">溶岩岛</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托３</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">溶岩岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:30%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/>  <span class="c_g">红速龙王</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">地底火山</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托４</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">地底火山</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:36%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span> x2<br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">火山</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托５</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">火山</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:52%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托６</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:40%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span> x2<br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">塔之秘境</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托７</span> </td>
+<td class="pc_only" style="background-color:#E0E0E0"> <span class="c_g">塔之秘境</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:40%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/>  <span class="c_g">野猪王</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 捕获 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">地底火山</span>]<br/> </span> <span class="c_g">烬灭刃捕获委托８</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">地底火山</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:55%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">古代林</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托９</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">古代林</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:46%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span> x2<br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">溶岩岛</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托１０</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">溶岩岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:46%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/>  <span class="c_g">斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 捕获 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">古代林</span>]<br/> </span> <span class="c_g">烬灭刃捕获委托G1</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">古代林</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:83%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">密林</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托G2</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">密林</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:75%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:64%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span> x2<br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托G3</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:70%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/>  <span class="c_g">斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">火山</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托G4</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">火山</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:86%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">溶岩岛</span>]<br/> </span> <span class="c_g">烬灭刃狩猎委托G5</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">溶岩岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:85%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:59%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span> x2<br/>  <span class="c_g">斩龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">溶岩岛</span>]<br/> </span> <span class="c_g">【超】烬灭刃狩猎委托</span> </td>
+<td class="pc_only" style="background-color:#FBCFCF"> <span class="c_g">溶岩岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:90%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:95%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">烬灭刃斩龙</span><br/> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

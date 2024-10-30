@@ -1,96 +1,175 @@
 
-        <!DOCTYPE html>
-        <html lang="zh">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>怪物信息表</title>
-            <style>
-            body {
-                font-family: 'Arial', sans-serif;
-                background-color: #f5f5f5;
-                margin: 0;
-                padding: 20px;
-            }
-            
-            h3 {
-                text-align: center;
-                color: #333;
-            }
-            
-            p {
-                text-align: center;
-                font-style: italic;
-                color: #666;
-            }
-            
-            .box1 {
-                margin: 10px auto;
-                padding: 10px;
-                max-width: 800px;
-                background-color: #fff;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            .box1 span.c_r {
-                color: red;
-                font-weight: bold;
-            }
-            
-            table.t1 {
-                width: 100%;
-                margin: 20px 0;
-                border-collapse: collapse;
-                background-color: #fff;
-                border-radius: 8px;
-                overflow: hidden;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            
-            th, td {
-                border: 1px solid #ddd;
-                padding: 12px;
-                text-align: center;
-            }
-            
-            th {
-                background-color: #f8f8f8;
-                color: #333;
-                font-weight: bold;
-            }
-            
-            .progress {
-                background-color: #e0e0e0;
-                border-radius: 4px;
-                overflow: hidden;
-            }
-            
-            .progress-bar {
-                background-color: #76c7c0;
-                color: white;
-                text-align: center;
-            }
-            
-            tr:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-            
-            a {
-                color: #337ab7;
-                text-decoration: none;
-            }
-            
-            a:hover {
-                text-decoration: underline;
-            }
-            
-            </style>
-        </head>
-        <body>
-            <h3>名称: 大名盾蟹 种: 甲壳种</h3>
-            <p>备注:括号内的肉质是爪による护手时。外壳、爪的下段は部位破坏后</p>
-            <table class="t1">
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>怪物信息表</title>
+<style>
+         body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f5f5f5; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+h3 { 
+    text-align: center; 
+    color: #333; 
+}
+
+p { 
+    text-align: center; 
+    font-style: italic; 
+    color: #666; 
+}
+
+.box1 { 
+    margin: 10px auto; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box2 { 
+    margin: 10px auto; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.box1 span.c_r { 
+    color: red; 
+    font-weight: bold; 
+}
+
+.table-container { 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+table.t1 { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: center; 
+}
+
+th { 
+    background-color: #f8f8f8; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+td { 
+    background-color: #ffffff; 
+}
+
+tr:nth-child(even) { 
+    background-color: #f9f9f9; 
+}
+
+.progress { 
+    background-color: #e0e0e0; 
+    border-radius: 5px; 
+}
+
+.progress-bar { 
+    background-color: #76c7c0; 
+    color: white; 
+    text-align: center; 
+    height: 100%; 
+    border-radius: 5px; 
+}
+
+.c_g { 
+    color: #5CB85C; 
+}
+
+a { 
+    color: #337ab7; 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.sp_only { 
+    display: none; 
+}
+
+@media (max-width: 768px) { 
+    .sp_only { 
+        display: inline; 
+    }
+
+    .pc_only { 
+        display: none; 
+    } 
+}
+
+        </style>
+</head>
+<body>
+<div class="f_min">
+<h3 id="id173393">大名盾蟹 - 甲壳种</h3>
+<div style="clear:both;">
+</div>
+<div>
+<h4>怪物的弱点</h4>
+<table class="t1">
+<tbody>
+<tr>
+<th width="15%">状态</th>
+<th width="15%">斩</th>
+<th width="15%">打</th>
+<th width="15%">弾</th>
+<th width="8%">火</th>
+<th width="8%">水</th>
+<th width="8%">雷</th>
+<th width="8%">冰</th>
+<th width="8%">龙</th>
+</tr>
+<tr>
+<td> <span class="c_g b">-</span> </td>
+<td>头</td>
+<td>头</td>
+<td>头</td>
+<td style="background-color:#ffe8e0;vertical-align: middle;">◎</td>
+<td style="background-color:#e0f0ff;vertical-align: middle;">△</td>
+<td style="background-color:#ffffe0;vertical-align: middle;">◎</td>
+<td style="background-color:#f0ffff;vertical-align: middle;">○</td>
+<td style="background-color:#f0fff0;vertical-align: middle;">×</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>怪物的肉质・耐久値</h4>
+<div class="box2">
+       耐久值归零会触发硬直和部位破坏,下方为切断的耐久值
+      <br/>在“狞猛化”状态下耐久值有特定的表现,下方为发生效果时的表现
+      <br/>
+<span class="c_g b">肉质カッコ内は爪による护手时。外壳、爪的下段は部位破坏后</span>
+<br/>
+<span class="c_p b">狞猛化时は肉质変化无</span>
+</div>
+<div class="row_x">
+<div class="col-sm-9">
+<table class="t1">
 <tbody>
 <tr>
 <th class="th2" colspan="10">肉质</th>
@@ -120,7 +199,7 @@
 <td class="b">100</td>
 </tr>
 <tr>
-<th>躯干</th>
+<th>胴</th>
 <td class="b">40 (20)</td>
 <td class="b">50 (30)</td>
 <td class="b">30 (15)</td>
@@ -181,7 +260,144 @@
 </tr>
 </tbody>
 </table>
-            <table class="t1">
+</div>
+<div class="col-sm-3 pc_only">
+<table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="4">耐久値・浸出物</th>
+</tr>
+<tr>
+<th width="31%">部位</th>
+<th width="23%">耐久値</th>
+<th width="23%">狞猛化</th>
+<th width="23%">浸出物</th>
+</tr>
+<tr>
+<th>头</th>
+<td class="b"> 170 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 170 </td>
+<td style="background-color:#ccc;color:green;">■</td>
+</tr>
+<tr>
+<th>胴</th>
+<td class="b"> 170 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 170 </td>
+<td style="background-color:#ccc;color:green;">■</td>
+</tr>
+<tr>
+<th>腕</th>
+<td class="b"> 100 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 100 </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>左爪</th>
+<td class="b"> 120 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 120 </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>右爪</th>
+<td class="b"> 120 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 120<br/>[156] </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>左脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 180<br/>[216] </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>右脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 180 </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>外壳</th>
+<td class="b"> 320 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 320<br/>[384] </td>
+<td style="background-color:#ccc;color:#ffcc44;">■</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sp_only">
+<table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="4">耐久値・浸出物</th>
+</tr>
+<tr>
+<th width="31%">部位</th>
+<th width="23%">耐久値</th>
+<th width="23%">狞猛化</th>
+<th width="23%">浸出物</th>
+</tr>
+<tr>
+<th>头</th>
+<td class="b"> 170 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 170 </td>
+<td style="background-color:#ccc;color:green;">■</td>
+</tr>
+<tr>
+<th>胴</th>
+<td class="b"> 170 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 170 </td>
+<td style="background-color:#ccc;color:green;">■</td>
+</tr>
+<tr>
+<th>腕</th>
+<td class="b"> 100 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 100 </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>左爪</th>
+<td class="b"> 120 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 120 </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>右爪</th>
+<td class="b"> 120 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 120<br/>[156] </td>
+<td style="background-color:#ccc;color:red;">■</td>
+</tr>
+<tr>
+<th>左脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 180<br/>[216] </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>右脚</th>
+<td class="b"> 180 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 180 </td>
+<td style="background-color:#ccc;color:#fcfcfc;">■</td>
+</tr>
+<tr>
+<th>外壳</th>
+<td class="b"> 320 </td>
+<td class="b" style="background-color:#ebdfeb;color:#cc33cc;"> 320<br/>[384] </td>
+<td style="background-color:#ccc;color:#ffcc44;">■</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>状态変化・耐性</h4>
+<div class="box1">
+       ◎＞○＞△＞×＞
+      <span class="c_r">无效</span> [越往左越有效]
+      <br/> 量规中央是各怪物的平均值
+      <br/> 毒伤害是经过总时间的伤害 
+     </div>
+<div class="row_x">
+<div class="col-sm-6">
+<table class="t1">
 <tbody>
 <tr>
 <th class="th2" colspan="5">状态异常耐性</th>
@@ -190,7 +406,7 @@
 <th width="25%">种类</th>
 <th width="25%">伤害</th>
 <th width="25%">时间</th>
-<th width="25%">触发阈值</th>
+<th width="25%">触发容易度</th>
 </tr>
 <tr>
 <th class="type_6">毒</th>
@@ -301,7 +517,9 @@
 </tr>
 </tbody>
 </table>
-            <table class="t1">
+</div>
+<div class="col-sm-6">
+<table class="t1">
 <tbody>
 <tr>
 <th class="th2" colspan="5">道具效果</th>
@@ -310,7 +528,7 @@
 <th width="20%">道具</th>
 <th width="15%">通常</th>
 <th width="15%">发怒</th>
-<th width="15%">疲劳</th>
+<th width="15%">疲れ</th>
 <th width="40%">前置任务</th>
 </tr>
 <tr>
@@ -340,7 +558,7 @@
 <td class="b"> 护手时的み </td>
 </tr>
 <tr>
-<th class="type_10">陷阱肉</th>
+<th class="type_10">罠肉</th>
 <td class="b" colspan="3"> × </td>
 <td class="b"> </td>
 </tr>
@@ -351,7 +569,107 @@
 </tr>
 </tbody>
 </table>
-            <table class="t1">
+</div>
+<div class="col-sm-6">
+<table class="t1">
+<tbody>
+<tr>
+<th class="th2" colspan="6">怪物的特徴</th>
+</tr>
+<tr>
+<th width="10%">咆哮</th>
+<th width="10%">风圧</th>
+<th width="10%">振动</th>
+<th width="10%">拘束</th>
+<th width="30%">属性やられ</th>
+<th width="30%">状态异常</th>
+</tr>
+<tr>
+<td> <span class="b"> - </span> </td>
+<td> <span class="b"> 小 </span> </td>
+<td> <span class="b"> - </span> </td>
+<td> <span class="b"> ○ </span> </td>
+<td> <span class="type_2">水[大]</span><br/> </td>
+<td> - </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="box1">
+       二名怪物得到的颜色素材根据任务LV不同而变化。 
+     </div>
+<div>
+<h3>剥ぎ取り・掉落物</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="10%">方法</th>
+<th width="30%">下位</th>
+<th width="30%">上位</th>
+<th width="30%">G级</th>
+</tr>
+<tr>
+<td style="background-color:#fffff0;"> <span class="c_g b">剥取个体</span><br/> <span class="c_p">3回</span><br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的甲壳</span> <span class="c_g b">60%</span> <br/> <span class="c_g">龙骨【大】</span> <span class="c_g b">19%</span> <br/> <span class="c_g">盾蟹的爪</span> <span class="c_g b">10%</span> <br/> <span class="c_g">黑珍珠</span> <span class="c_g b">10%</span> <br/> <span class="c_g">蟹黄</span> <span class="c_g b">1%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的坚壳</span> <span class="c_g b">60%</span> <br/> <span class="c_g">上龙骨</span> <span class="c_g b">19%</span> <br/> <span class="c_g">盾蟹的尖爪</span> <span class="cpg1_8"></span> <br/> <span class="c_g">黑珍珠</span> <span class="c_g b">10%</span> <br/> <span class="c_g">极上蟹黄</span> <span class="c_g b">1%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的重壳</span> <span class="c_g b">60%</span> <br/> <span class="c_g">強龙骨</span> <span class="cpg1_12"></span> <br/> <span class="c_g">盾蟹的刚爪</span> <span class="c_g b">10%</span> <br/> <span class="c_g">极上黑珍珠</span> <span class="c_g b">10%</span> <br/> <span class="c_g">极上蟹黄</span> <span class="c_g b">1%</span> <br/> </td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">掉落物</span><br/> <span class="c_p">1回</span><br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">外壳珍珠</span> <span class="cpg1_16"></span> <br/> <span class="c_g">黑珍珠</span> <span class="c_g b">25%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">外壳珍珠</span> <span class="c_g b">38%</span> <br/> <span class="c_g">极上外壳珍珠</span> <span class="c_g b">37%</span> <br/> <span class="c_g">黑珍珠</span> <span class="cpg1_20"></span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">极上外壳珍珠</span> <span class="c_g b">75%</span> <br/> <span class="c_g">极上黑珍珠</span> <span class="c_g b">25%</span> <br/> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">食事終了时、音爆弾で护手を解く</td>
+</tr>
+</tbody>
+</table>
+<h3>捕获・部位破坏报酬</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="10%">方法</th>
+<th width="30%">下位</th>
+<th width="30%">上位</th>
+<th width="30%">G级</th>
+</tr>
+<tr>
+<td style="background-color:#fffff0;"> <span class="c_g b">捕获</span><br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的爪</span> <span class="c_g b">35%</span> <br/> <span class="c_g">黑珍珠</span> x2 <span class="cpg1_24"></span> <br/> <span class="c_g">盾蟹的甲壳</span> <span class="c_g b">25%</span> <br/> <span class="c_g">腐朽的真红角</span> <span class="c_g b">10%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的尖爪</span> <span class="c_g b">35%</span> <br/> <span class="c_g">黑珍珠</span> x2 <span class="cpg1_28"></span> <br/> <span class="c_g">盾蟹的坚壳</span> <span class="c_g b">20%</span> <br/> <span class="c_g">盾蟹的甲壳</span> x2 <span class="c_g b">10%</span> <br/> <span class="c_g">腐朽的真红角</span> <span class="c_g b">10%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的刚爪</span> <span class="cpg1_32"></span> <br/> <span class="c_g">极上黑珍珠</span> x2 <span class="c_g b">25%</span> <br/> <span class="c_g">盾蟹的重壳</span> <span class="c_g b">20%</span> <br/> <span class="c_g">盾蟹的坚壳</span> x2 <span class="c_g b">10%</span> <br/> <span class="c_g">腐朽的真红的角</span> <span class="cpg1_36"></span> <br/> </td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">外壳破坏</span><br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">腐朽的真红角</span> <span class="c_g b">60%</span> <br/> <span class="c_g">龙骨【大】</span> <span class="c_g b">25%</span> <br/> <span class="c_g">盾蟹的甲壳</span> <span class="c_g b">15%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">腐朽的真红角</span> <span class="cpg1_40"></span> <br/> <span class="c_g">盾蟹的坚壳</span> <span class="c_g b">15%</span> <br/> <span class="c_g">上龙骨</span> <span class="c_g b">15%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">腐朽的真红的角</span> <span class="c_g b">70%</span> <br/> <span class="c_g">盾蟹的重壳</span> <span class="cpg1_44"></span> <br/> <span class="c_g">坚龙骨</span> <span class="c_g b">15%</span> <br/> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">耐久値を2回0にする与报酬</td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:#fffff0;"> <span class="c_g b">爪破坏</span><br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的爪</span> <span class="c_g b">85%</span> <br/> <span class="c_g">盾蟹的爪</span> x2 <span class="c_g b">15%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的尖爪</span> <span class="cpg1_48"></span> <br/> <span class="c_g">盾蟹的尖爪</span> x2 <span class="c_g b">15%</span> <br/> <span class="c_g">盾蟹的爪</span> x2 <span class="c_g b">15%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的刚爪</span> <span class="c_g b">70%</span> <br/> <span class="c_g">盾蟹的刚爪</span> x2 <span class="cpg1_52"></span> <br/> <span class="c_g">盾蟹的尖爪</span> x2 <span class="c_g b">15%</span> <br/> </td>
+</tr>
+<tr>
+<td colspan="3" style="background-color:#F9F9F9;">两爪破坏で报酬</td>
+</tr>
+<tr>
+<td style="background-color:#fffff0;"> <span class="c_g b">自由狩猎</span><br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的甲壳</span> <span class="c_g b">25%</span> <br/> <span class="c_g">黑珍珠</span> <span class="c_g b">25%</span> <br/> <span class="c_g">龙骨【大】</span> <span class="cpg1_56"></span> <br/> <span class="c_g">贪吃金枪鱼</span> x2 <span class="c_g b">12%</span> <br/> <span class="c_g">盾蟹的爪</span> <span class="c_g b">12%</span> <br/> <span class="c_g">龙骨【中】</span> x2 <span class="c_g b">8%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的坚壳</span> <span class="cpg1_60"></span> <br/> <span class="c_g">黑珍珠</span> x2 <span class="c_g b">20%</span> <br/> <span class="c_g">上龙骨</span> x2 <span class="c_g b">16%</span> <br/> <span class="c_g">盾蟹的尖爪</span> <span class="c_g b">15%</span> <br/> <span class="c_g">贪吃金枪鱼</span> x3 <span class="cpg1_64"></span> <br/> <span class="c_g">尖龙骨</span> <span class="c_g b">8%</span> <br/> <span class="c_g">腐朽的真红角</span> <span class="c_g b">8%</span> <br/> </td>
+<td style="background-color:#fff;"> <span class="c_g">盾蟹的重壳</span> <span class="c_g b">25%</span> <br/> <span class="c_g">极上黑珍珠</span> <span class="cpg1_68"></span> <br/> <span class="c_g">尖龙骨</span> x2 <span class="c_g b">16%</span> <br/> <span class="c_g">盾蟹的刚爪</span> <span class="c_g b">15%</span> <br/> <span class="c_g">腐朽的真红的角</span> <span class="c_g b">8%</span> <br/> <span class="c_g">強龙骨</span> <span class="cpg1_72"></span> <br/> <span class="c_g">贪吃金枪鱼</span> x3 <span class="c_g b">8%</span> <br/> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>生息地</h3>
+<table class="t1">
 <tbody>
 <tr>
 <th width="25%">地图</th>
@@ -360,38 +678,570 @@
 <th width="25%">休息区域</th>
 </tr>
 <tr>
-<td><a href="../data/2412.html">旧沙漠</a></td>
+<td><span class="c_g">旧沙漠</span></td>
 <td>3</td>
 <td>1,2,3,4,7</td>
 <td>3</td>
 </tr>
 <tr>
-<td><a href="../data/2402.html">孤岛</a></td>
+<td><span class="c_g">孤岛</span></td>
 <td>5</td>
 <td>2,5,6,7,9,10</td>
 <td>6</td>
 </tr>
 <tr>
-<td><a href="../data/2969.html">沙漠</a></td>
+<td><span class="c_g">沙漠</span></td>
 <td>3</td>
 <td>1,2,3,5,7,9</td>
 <td>3</td>
 </tr>
 <tr>
-<td><a href="../data/2975.html">密林</a></td>
+<td><span class="c_g">密林</span></td>
 <td>3,10</td>
 <td>1,2,3,4,9,10</td>
 <td>9</td>
 </tr>
 <tr>
-<td><a href="../data/2968.html">遗群岭</a></td>
+<td><span class="c_g">遗群岭</span></td>
 <td>3</td>
 <td>1,2,3,4,6</td>
 <td>4</td>
 </tr>
 </tbody>
 </table>
-        </body>
-        </html>
-
-        
+<h3>出现任务</h3>
+<div class="box1">
+<span style="background-color:#FFE8E0;">赤色</span>背景は乱入时に出现
+      <br/>
+ 乱入怪物的底色使用
+      <span style="background-color:#fff0a0;">橙色</span>标识
+      <br/> 強さ的ゲージは [
+      <span style="background-color:#5CB85C;">绿</span>：体力的倍率] [
+      <span style="background-color:#CC9342;">橙</span>：全体防御率] を集计しゲージが増えるほど強く、平均値がゲージ中央に之るように加工
+      <br/> 怪物固有的体力等があり、そ的倍率之的で异之る怪物与的比較には使えません 
+     </div>
+<table class="t1">
+<tbody>
+<tr>
+<th class="sp_only" width="43%">任务名</th>
+<th class="sp_only" width="17%">強さ</th>
+<th class="sp_only" width="40%">怪物</th>
+<th class="pc_only" width="15%">种类</th>
+<th class="pc_only" width="30%">任务名</th>
+<th class="pc_only" width="10%">区域</th>
+<th class="pc_only" width="15%">強さ</th>
+<th class="pc_only" width="30%">怪物</th>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 村下3 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:green;">村下3</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">潜伏沙中的巨大蟹！</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:8%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:5%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 村下3 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 捕获 <span class="sp_only"> <span style="color:green;">村下3</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">狩猎盾蟹和贝</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:8%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:5%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:green;"> 村下3 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 讨伐 <span class="sp_only"> <span style="color:green;">村下3</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">不安的狗龙和雌狗龙</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:6%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:5%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">狗龙</span><br/>  <span class="c_g">雌狗龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 村下4 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 连续狩猎 <span class="sp_only"> <span style="color:green;">村下4</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">奇克村的英雄传说</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:5%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:5%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span> x2<br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 村下5 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 连续狩猎 <span class="sp_only"> <span style="color:green;">村下5</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">孤岛的研究对象</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:6%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:5%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">青熊兽</span><br/>  <span class="c_g">鬼蛙</span><br/>  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 村下6 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 连续狩猎 <span class="sp_only"> <span style="color:green;">村下6</span> [<span class="c_g">斗技场</span>]<br/> </span> <span class="c_g">高难度：赤的猛攻！</span> </td>
+<td class="pc_only" style="background-color:#FFFFF9"> <span class="c_g">斗技场</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:15%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">赤甲兽</span><br/>  <span class="c_g">盾蟹</span><br/>  <span class="c_g">雄火龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 村下6 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 猎猫 <span class="sp_only"> <span style="color:green;">村下6</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">挑战破坏盾蟹的壳！</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:44%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:5%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:red;"> 村上7 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 采集 <span class="sp_only"> <span style="color:red;">村上7</span> [<span class="c_g">遗群岭</span>]<br/> </span> <span class="c_g">遗群岭的不思議之石</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">遗群岭</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:16%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:red;"> 村上7 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">村上7</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">跻身真正的名人行列？</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:23%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:red;"> 村上7 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">村上7</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">穿越旧沙漠的行李</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:15%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/>  <span class="c_g">土砂龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:red;"> 村上8 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">村上8</span> [<span class="c_g">遗群岭</span>]<br/> </span> <span class="c_g">被撕裂的骄傲</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">遗群岭</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:18%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">镰蟹</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">水兽</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:red;"> 村上9 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">村上9</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">帮我狩猎轰龙吧！</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:20%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">轰龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">沙龙王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:red;"> 村上9 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 捕获 <span class="sp_only"> <span style="color:red;">村上9</span> [<span class="c_g">密林</span>]<br/> </span> <span class="c_g">尾锤龙、真正的登山者</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">密林</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:20%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">尾锤龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">野猪王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">斩龙</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:green;"> 集下1 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:green;">集下1</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">铁壁的盾蟹</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:12%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">黄速龙王</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:green;"> 集下1 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 讨伐 <span class="sp_only"> <span style="color:green;">集下1</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">盾蟹们的集合</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:9%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">小盾蟹</span> x20<br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:green;"> 集下1 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 采集 <span class="sp_only"> <span style="color:green;">集下1</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">孤岛的采集之旅</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:12%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:green;"> 集下2 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 捕获 <span class="sp_only"> <span style="color:green;">集下2</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">真的好危险！舌！</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:12%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">赤甲兽</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">沙龙王</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:red;"> 集上4 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">集上4</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">铁壁的盾蟹</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:30%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">黄速龙王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">恐暴龙</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:red;"> 集上5 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 连续狩猎 <span class="sp_only"> <span style="color:red;">集上5</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">热沙的喧嘩是武器的素材</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:20%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/>  <span class="c_g">雌火龙</span><br/>  <span class="c_g">潜口龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:red;"> 集上6 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">集上6</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">来自沙漠的彼方</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:26%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">斩龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">轰龙</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">恐暴龙</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:red;"> 集上6 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">集上6</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">孤岛的暴君、盾蟹</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:59%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G1 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G1</span> [<span class="c_g">遗群岭</span>]<br/> </span> <span class="c_g">看板娘推荐：遗群岭的水兽</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">遗群岭</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:58%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">水兽</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">青熊兽</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">恐暴龙</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 集G1 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G1</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">滚烫沙漠的盾蟹狩猎</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:67%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">黄速龙王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">金狮子</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 集G1 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G1</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">沙子中的惊喜</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:52%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">沙龙王</span><br/>  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G2 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 采集 <span class="sp_only"> <span style="color:#cc33cc;">集G2</span> [<span class="c_g">密林</span>]<br/> </span> <span class="c_g">密林的采集之旅</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">密林</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:63%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G2 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G2</span> [<span class="c_g">遗群岭</span>]<br/> </span> <span class="c_g">遗群岭的绿色女王</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">遗群岭</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:63%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">雌火龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">桃毛兽王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">跳狗龙</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G2 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G2</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">翻滚！翻滚！红色牙兽</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:63%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">赤甲兽</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">雌火龙</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">金狮子</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G2 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G2</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">沙漠的水面潜伏的影子</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:63%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">水龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">沙龙王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">黄速龙王</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G2 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G2</span> [<span class="c_g">密林</span>]<br/> </span> <span class="c_g">密林的迅龙与对峙せよ</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">密林</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:63%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">迅龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">蓝速龙王</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">恐暴龙</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 集G2 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G2</span> [<span class="c_g">遗群岭</span>]<br/> </span> <span class="c_g">超☆笔记～狞猛化盾蟹篇～</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">遗群岭</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:90%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:#FFE8E0;color:#cc33cc;"> 集G3 </td>
+<td class="left" style="background-color:#FFE8E0;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G3</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">暑い热い沙漠</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:#FFE8E0;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:66%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:#FFE8E0;">  <span class="c_g">斩龙</span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">土砂龙</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">潜口龙</span></span><br/>  <span style="background-color:#fff0a0;"><span class="c_g">盾蟹</span></span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 集G3 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 连续狩猎 <span class="sp_only"> <span style="color:#cc33cc;">集G3</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">旧沙漠に吹く热风！</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:56%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:65%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">黄速龙王</span><br/>  <span class="c_g">盾蟹</span><br/>  <span class="c_g">潜口龙</span><br/>  <span class="c_g">土砂龙</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> 特许可 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">特许可</span> [<span class="c_g">孤岛</span>]<br/> </span> <span class="c_g">矛碎狩猎委托５</span> </td>
+<td class="pc_only" style="background-color:#F0FFF0"> <span class="c_g">孤岛</span> </td>
+<td style="background-color:;">
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-success" role="progressbar" style="width:23%;height:3px;"></div>
+</div>
+<div class="progress" style="height:3px;margin:3px;">
+<div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%;height:3px;"></div>
+</div> </td>
+<td style="background-color:;">  <span class="c_g">矛碎盾蟹</span><br/>  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:red;"> 上位活动 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:red;">上位活动</span> [<span class="c_g">旧沙漠</span>]<br/> </span> <span class="c_g">沙漠的大名・座する盾</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">旧沙漠</span> </td>
+<td style="background-color:;"> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+<tr>
+<td class="pc_only" style="background-color:;color:#cc33cc;"> G位活动 </td>
+<td class="left" style="background-color:;padding-left:10px;"> 狩猎 <span class="sp_only"> <span style="color:#cc33cc;">G位活动</span> [<span class="c_g">沙漠</span>]<br/> </span> <span class="c_g">キングダム・大陸最強決定战！</span> </td>
+<td class="pc_only" style="background-color:#FED267"> <span class="c_g">沙漠</span> </td>
+<td style="background-color:;"> </td>
+<td style="background-color:;">  <span class="c_g">盾蟹</span><br/> </td>
+</tr>
+</tbody>
+</table>
+<h3>来访猎人出现</h3>
+<table class="t1">
+<tbody>
+<tr>
+<th width="15%">ランク</th>
+<th width="30%">任务名</th>
+<th width="10%">种类</th>
+<th width="15%">フィールド</th>
+<th width="30%">出现怪物</th>
+</tr>
+<tr>
+<td class="b" style="color:green;"> 下位 </td>
+<td> <span class="c_g">铁壁的盾蟹</span> </td>
+<td style="color:;"> 大型 </td>
+<td> 旧沙漠 </td>
+<td> <span class="c_g">盾蟹</span> </td>
+</tr>
+<tr>
+<td class="b" style="color:red;"> 上位 </td>
+<td> <span class="c_g">铁壁的盾蟹</span> </td>
+<td style="color:;"> 大型 </td>
+<td> 旧沙漠 </td>
+<td> <span class="c_g">盾蟹</span> </td>
+</tr>
+<tr>
+<td class="b" style="color:#cc33cc;"> G级 </td>
+<td> <span class="c_g">铁壁的盾蟹</span> </td>
+<td style="color:;"> 大型 </td>
+<td> 旧沙漠 </td>
+<td> <span class="c_g">盾蟹</span> </td>
+</tr>
+</tbody>
+</table>
+<h3>随从猫任务出现</h3>
+<div class="box1">
+       出现区域：沙漠 
+     </div>
+<table class="t1">
+<tbody>
+<tr>
+<th width="10%">ランク</th>
+<th width="30%">素材1</th>
+<th width="30%">素材2</th>
+<th width="30%">素材3</th>
+</tr>
+<tr>
+<td class="b" style="color:green;"> 下位 </td>
+<td> <span class="c_g">盾蟹的端材</span> x2 </td>
+<td> <span class="c_g">盾蟹的甲壳</span> </td>
+<td> <span class="c_g">黑珍珠</span> </td>
+</tr>
+<tr>
+<td class="b" style="color:red;"> 上位 </td>
+<td> <span class="c_g">盾蟹的上端材</span> x2 </td>
+<td> <span class="c_g">盾蟹的坚壳</span> </td>
+<td> <span class="c_g">黑珍珠</span> x3 </td>
+</tr>
+<tr>
+<td class="b" style="color:#cc33cc;"> G级 </td>
+<td> <span class="c_g">盾蟹的重端材</span> x2 </td>
+<td> <span class="c_g">盾蟹的重壳</span> </td>
+<td> <span class="c_g">极上黑珍珠</span> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
